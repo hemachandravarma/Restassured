@@ -27,7 +27,7 @@ public class PeetStoreExample
 				  .log().all();
 				  
 				  */
-	/*	File f=new File("src\\test\\testfile.json");
+		File f=new File("src\\test\\testfile.json");
 	given()
 	    .baseUri("https://jsonplaceholder.typicode.com/posts") 
 	    .headers("Content-Type","Application/xml")
@@ -37,9 +37,9 @@ public class PeetStoreExample
 	.then()
 	    .log().all();
 	    
-	    f.close();
+	 //   f.close();
 		
-		*/
+	
 		
 		
 	/*	JSONObject js=new JSONObject();
@@ -70,7 +70,7 @@ public class PeetStoreExample
 	.then()
 	    .log().all();*/
 		
-	/*	given()
+	given()
 	    .baseUri("https://petstore.swagger.io/v2/pet/3") 
 	    //.auth().preemptive().basic("admin", "admin")
 	.when()  
@@ -78,12 +78,12 @@ public class PeetStoreExample
 	.then()
 	    .log().all();
 		
-		*/
 		
-	String s1="{\r\n" +
-	            " \"userName\": \"batch256\",\r\n" +
-		    	"\"password\" : \"India@11\"\r\n" +
-				"}";
+		
+	//String s1="{\r\n" +
+	  //          " \"userName\": \"batch256\",\r\n" +
+		//    	"\"password\" : \"India@11\"\r\n" +
+			//	"}";
 			/*given()
 				.baseUri("https://github.com/hemachandravarma")
 				.auth().oauth2("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")
@@ -99,7 +99,7 @@ public class PeetStoreExample
 		.when()
 		    .get()
 		.then()
-		   .log().all();*/
+		   .log().all();
 		
 		
 		
@@ -108,7 +108,7 @@ public class PeetStoreExample
 		//js.put("username", "batch256");
 	//	js.put("password", "India@");
 		
-		Response res=given()
+		/*esponse res=given()
 		  .baseUri("https://bookstore.toolsqa.com/Account/v1/user")
 		  .header("Content-Type","application/Json")
 		  .body(s1)
@@ -126,11 +126,11 @@ public class PeetStoreExample
 		   .baseUri("https://bookstore.toolsqa.com/BookStore/v1/Book")
 		   .header("Autarization","Bearer "+x)
 		   .header("Content-Type", "Application/json")
-		   .body(2)
+		   .body(s2)
 		.when()
 		  .delete()
 		 .then()
-		   .log().all();
+		   .log().all();*/
 		  
 	}
 }
